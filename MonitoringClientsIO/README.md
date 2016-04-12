@@ -5,7 +5,7 @@
 pip install paramiko
 ```
 + futures
-+ ```
+```
 pip install futures
 ```
 
@@ -15,4 +15,6 @@ $ ./create_multidb.py
 $ ./monitor.sh
 ```
 ##说明
-脚本每隔一分钟抓取每个客户端的读写数据，并计算读写速率。然后根据写速率进行排序，将（客户端，write_rates,read_rates）写入相应客户端的lg文件
+脚本每隔一分钟抓取每个客户端的读写数据，并计算读写速率。然后根据写速率进行排序，将（客户端，write_rates,read_rates）写入相应客户端的lg文件。
+
+lustre-OST0001.lg是一个实际的示例文件。
